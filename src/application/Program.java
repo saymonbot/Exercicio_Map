@@ -7,7 +7,6 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-
 public class Program {
 
 	public static void main(String[] args) {
@@ -23,7 +22,6 @@ public class Program {
 			String line = br.readLine();
 
 			while (line != null) {
-
 				String[] fields = line.split(",");
 				String name = fields[0];
 				int count = Integer.parseInt(fields[1]);
@@ -41,11 +39,10 @@ public class Program {
 			for (String key : votes.keySet()) {
 				System.out.println(key + ": " + votes.get(key));
 			}
-			
+
 		} catch (IOException e) {
 			System.out.println("Error: " + e.getMessage());
 		}
-		
 		scan.close();
 	}
 }
